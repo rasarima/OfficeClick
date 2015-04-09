@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 200px;
+    margin: 10px;
+    font-size: 2.5em;
+    position: relative;
+
+}
+
+#card-holder {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.crd-matricula {
+    font-size: 0.8em;
+}
+
+.aberto .modal {
+    background: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    z-index: 2;
+
+}
+
+.aberto #areaMenuFuncionario {
+    min-width: 500px;
+    height: 80%;
+    background-color: white;
+    box-shadow: #2e2e2e 1px 1px 9px 1px;
+    position: absolute;
+    z-index: 10;
+    margin: 10px 20% 10px 20%;
+    display: none;
+
+}
+
+.fechado .modal, .fechado #areaMenuFuncionario {
+    display: none;
+}
+
+.aberto .modal, .aberto #areaMenuFuncionario {
+    display: block;
+}
+
+.fechado #cartaoTemp {
+    display: none;
+}
+
+.aberto #cartaoTemp {
+    width: 96%;
+    display: block;
+}
+
+.hitest {
+
+    width: 333px;
+    height: 280px;
+    position: absolute;
+    z-index: -9;
+    top: -87px;
+    left: -43px;
+    opacity: 0.2;
+
+}
+
+#menu-ferramentas {
+    margin: 10px;
+    background-color: #5aa8c5;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#myChart {
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+
+}
+
+#admin {
+    background-color: #346c7c;
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+#top-grid {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
